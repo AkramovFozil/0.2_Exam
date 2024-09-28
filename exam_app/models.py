@@ -6,3 +6,7 @@ class Question(models.Model):
     email = models.EmailField()
     text = models.TextField()
 
+    def __str__(self):
+    return self.name
+
+
